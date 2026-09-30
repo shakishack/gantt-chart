@@ -1,0 +1,15 @@
+{
+  "name": "smart-gantt-chart-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack Smart Gantt Chart App with React Vite, Express, and PostgreSQL",
+  "private": true,
+  "scripts": {
+    "install:all": "yarn --cwd server install && yarn --cwd client install",
+    "client": "yarn --cwd client dev",
+    "server": "yarn --cwd server dev",
+    "seed": "yarn --cwd server seed",
+    "build": "yarn --cwd client build",
+    "start": "node server/src/server.js",
+    "heroku-postbuild": "yarn --cwd server install --production=false && yarn --cwd client install --production=false && yarn --cwd client build"
+  }
+}
